@@ -349,7 +349,7 @@ until Server
 TPS:TeleportToPlaceInstance(_place,Server.id,game.Players.LocalPlayer)
 end)
 
-Tab1Section:NewButton("Tall Script", "", function()
+Tab1Section:NewButton("Big Head (Rthro Head)", "", function()
 --body sizes: BodyHeightScale: 105%
 --            BodyWidthScale: 100%
 --            HeadScale: 100%
@@ -715,13 +715,6 @@ game:GetService("Lighting").OutdoorAmbient = Color3.fromRGB(128, 128, 128)
 end)
 
 Tab1Section:NewButton("Steal Player Inventory", "", function()
-game.StarterGui:SetCore("SendNotification",  {
- Title = "This Script Is Fe Mainly In Scp Games";
- Text = "";
- Icon = "";
- Duration = 1;
-})
-wait(1)
 for i,v in pairs (gamePlayers:GetChildren()) do
 wait()
 for i,b in pairs (vBackpack:GetChildren()) do
