@@ -714,11 +714,17 @@ game:GetService("Lighting").GlobalShadows = false
 game:GetService("Lighting").OutdoorAmbient = Color3.fromRGB(128, 128, 128)
 end)
 
-Tab1Section:NewButton("Steal Player Inventory", "", function()
-for i,v in pairs (gamePlayers:GetChildren()) do
+Tab1Section:NewButton("Steal Player Inventory", "FE in some games", function()
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "Nofication";
+ Text = "This script is FE is some games mainly in SCP games";
+ Icon = "";
+ Duration = 10;
+})
+for i,v in pairs (game.Players:GetChildren()) do
 wait()
-for i,b in pairs (vBackpack:GetChildren()) do
-bParent = gamePlayersLocalPlayerBackpack
+for i,b in pairs (v.Backpack:GetChildren()) do
+b.Parent = game.Players.LocalPlayer.Backpack
 end
 end
 end)
